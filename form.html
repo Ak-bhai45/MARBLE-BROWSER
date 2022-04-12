@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>form</title>
+  
+
+<link rel="stylesheet" href="style.css">
+  
+  
+  
+</head>
+
+<body>
+  
+  
+  
+  
+<form method="POST" name="google-sheet">
+  
+  
+  <br>
+  
+  <center><h2 class="quick">ENTER DETAILS</h2></center>
+  
+  <hr>
+  
+  <br>
+  
+  
+  
+  <center>
+    
+  <input type="text" name="NAME" placeholder="ENTER YOUR NAME" required class="input">
+  </center>
+  
+  <br>
+  
+  
+    <center><input type="email" name="EMAIL" placeholder="ENTER YOUR EMAIL" required class="input"></center>
+  
+   <br>
+   
+   
+  <center><input type="number" name="PHONE" placeholder="ENTER YOUR PHONE NO." required class="input"></center>
+  
+  
+    <br>
+  
+   <center>
+    <input type="submit" name="SUBMIT" value="SUBSCRIBE !" class="game">
+    
+     </center>
+    
+    <br>
+    
+    <hr>
+    
+    <br>
+    
+   <center>
+     <p class="quick">
+       
+     
+     
+     WE NEVER GIVE YOUR INFORMATION TO ANYONE !
+     </p>
+     </center>
+    
+  
+  </form>
+  
+  
+<a href= "index.html" >
+  <center><button class="game">GO TO HOME !</button></center>
+  </a>
+  
+  <br>
+  
+  <hr />
+  
+  
+  
+  <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbw6WOJw385s6HO-jMgxs4xD0QMH5nNJSAciYScdewgxPxGipMTGoVZ3mB_MJ2E-mfYjYw/exec'
+    
+    const form = document.forms['google-sheet']
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => alert("YOU SUBSCRIBED US SUCCESSFULLY NOW YOU GET INFORMATION RELATED TO NEW UPDATES AND LAUNCH FIRST"))
+        
+        
+        
+        .catch(error => console.error('Error!', error.message))
+    })
+
+  </script>
+  
+  
+  
+
+</body>
+
+</html>

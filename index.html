@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    
+    
+    
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  
+ 
+    
+  </head>
+  
+  
+<body>
+  
+    
+    <div class="wrapper">
+
+
+      
+      <p><hr></p>
+      
+      
+      
+  <center><h2 class="quick">《MARBLE BROWSER》</h2>
+  </center>
+  
+  
+      
+       <hr>
+      
+  
+  <br>
+      
+      
+      
+      
+      
+      <div class="search-input">
+        
+        <a href="" target="_blank" hidden></a>
+        
+  <input type="url" placeholder="Search google marblee...">
+        
+        <div class="autocom-box">
+        
+        </div>
+        
+<div class="icon">
+<i class="fas fa-search"></i>
+</div>
+        
+      </div>
+      
+    
+      </div>
+      
+  
+  
+  
+  
+
+  
+  
+    <hr>
+
+
+  
+<center> <button onclick="myButton()" class="reload">REFRESH</button>
+
+<button onclick="toggleMode()" class="darkbtn">BEAUTIFY</button></center>
+
+
+
+
+
+<center>
+  
+  
+ <button id="show-popup" class="collabbtn">Current Collaboration</button></center>
+ 
+ 
+<center>
+  
+  <a href="form.html">
+  <button class="collabbtn">GET NOTIFICATIONS !</button></a>
+  
+  </center>
+
+
+
+
+    
+    <div id="container">
+    
+    <div id="close">
+      
+    <h2>X</h2>
+      
+    </div>
+    
+   <center> <h2>Current Collaboration</h2></center>
+    
+    <p><hr></p>
+  <br>
+    <center>
+    <h1>
+      
+   <u><strong>MB X BTS</strong></u>
+    
+    </h1>
+    </center>
+    
+    <br />
+    
+    <center>
+      <i class="fas fa-arrow-down" id="arrow"></i>
+    </center>
+   
+   <br>
+   
+   
+   <center>
+     <h3>
+       <strong>
+        <u>FROM : 1 MAY TO 1 JUNE</u>
+       </strong>
+     </h3>
+     
+     <br>
+     
+   </center>
+   
+   <br>
+   
+   
+  
+   
+  </div>
+  
+  
+  
+  
+  
+  <script>
+    
+    $(document).ready(function(){
+      $("#show-popup").click(function(){
+        $("#container").show();
+      })
+    })
+    
+    
+    $(document).ready(function(){
+      $("#close").click(function(){
+        $("#container").hide();
+      })
+    })
+    
+    
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</center>
+
+
+
+
+
+
+<center>
+
+    <form action="https://www.google.com/search" method="get" target="_blank" id="search-form">
+  
+      <input name="q" type="text" placeholder="Search Google..." autocomplete="off" autofocus hidden>
+  
+  
+  
+  
+  <section>
+    
+  <button type="button" class="collabbtn"><i class="fas fa-microphone"></i></button>
+  
+  
+  </section>
+  
+    </form>
+    
+    <br>
+    
+    <hr>
+    
+    <br>
+    
+    
+    
+    
+    
+    
+<button class="game" id="load">LOAD MORE...</button>
+    
+    
+    
+<center><div id="more">
+  
+
+  
+    <br>
+    
+    <center>
+     <h1 class="mf">  FEATURES</h1>
+      </center>
+    
+    
+    <br>
+    <hr>
+    <br>
+    
+
+
+<a href="contact.html">
+  
+  
+<center><button class="game">HAVE ANY PROBLEM !</button></center>
+
+</a>
+
+
+<a href="bts.html">
+<button class="collabbtn">MB X BTS</button>
+</a>
+
+<br>
+<br>
+
+<hr>
+
+
+      <div class="update">
+      
+         <center>
+        <h2 id="ooUpdate"></h2>
+         </center>
+      
+       </div>
+      
+
+
+
+<br>
+
+<hr>
+
+<br>
+
+<div id="cut">
+  <h1>X</h1>
+</div>
+    
+    <br>
+    <hr>
+    <br>
+
+</div></center>
+    
+    
+ 
+  <script>
+    
+    $(document).ready(function(){
+      $("#load").click(function(){
+        $("#more").show();
+      })
+    })
+    
+    
+    $(document).ready(function(){
+      $("#cut").click(function(){
+        $("#more").hide();
+      })
+    })
+    
+    
+  </script>
+    
+    
+    
+    
+    
+    
+  
+  
+
+      
+    
+    <br>
+  
+  
+  <script>
+  
+const ooUpdate = document.getElementById("ooUpdate");
+
+ if(navigator.onLine){
+   ooUpdate.textContent =  "ONLINE";
+   ooUpdate.style.color= "green";
+   ooUpdate.style.backgroundColor= "#f1f1f1";
+
+ }
+ 
+ window.addEventListener("online" , function(){
+   
+   ooUpdate.textContent = "ONLINE";
+   ooUpdate.style.color = "green";
+   ooUpdate.style.backgroundColor = "#f1f1f1";
+   
+ });
+ 
+ window.addEventListener("offline", function() {
+ 
+   ooUpdate.textContent = "OFFLINE";
+   ooUpdate.style.color = "red";
+   ooUpdate.style.backgroundColor = "#f1f1f1";
+ 
+ });
+    
+  </script>
+
+
+
+
+
+
+<script>
+
+function toggleMode(){
+document.body.classList.toggle("dark-mode");
+}
+  
+</script>
+
+<hr>
+<br>
+
+<img src="bts.png" class="collab">
+
+<br>
+
+
+<br>
+<hr>
+
+
+
+  
+  <br><br>
+
+    
+    
+
+      
+      
+    <a href="WhatsApp://send?text=https://marble-download.lessless-ak-bha.repl.co/ ============== IS YOUR BROWSER NOT A FUN TRY MARBLE BROWSER" data-action="share/whatsapp/share">
+      
+  <center><button class="share">
+    
+    <div class="text">
+  <i class="fab fa-whatsapp"></i>
+  SHARE
+    </div>
+    
+  </button></center>
+      
+  </a>
+  
+  <br>
+  
+  Share With Your Friends
+
+
+
+  <br>
+  
+  <p><hr></p>
+
+ <strong> © Copyright - 2022 - by Marble Apps</strong>
+  
+  <p><hr></p>
+  
+
+   <script src="script.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <style type="text/css" media="all">
+  
+ @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+   
+   
+     * {
+     margin: 1;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Quicksand', sans-serif;
+   }
+   
+  div {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+button{
+  height: 200px;
+  width: 200px;
+  border-style: none;
+  background: none;
+}
+
+
+  
+  
+    input{
+  width: 100%;
+  padding: 10px;
+  border-style: none;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background:#ec4a77;
+  font-size: 18px;
+}
+
+textarea{
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: #4be6b5;
+  font-size: 18px;
+  border-style: none;
+}
+
+select{
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  border-style: none;
+}
+
+.submit{
+  width: 100%;
+  font-size: 20px;
+  height: 40px;
+  background: linear-gradient(45deg,#ee9032,#f16d52,#ec4a77,#7963aa,#4be6b5);
+  
+  animation: movinggradient 3s ease-out infinite;
+  background-size: 200%;
+}
+
+
+
+
+@keyframes movinggradient{
+  
+  0%{
+    background-position: 0 50%;
+  }
+  
+  50%{
+    background-position: 100% 50%;
+  }
+  
+  0%{
+    background-position: 0 50%;
+  }
+  
+}
+
+
+  </style>
+  
+  
+</head>
+
+<body>
+  
+ 
+  
+    <center>
+      <h1>CONTACT US !</h1>
+    </center>
+    
+    <hr>
+
+    <form action="https://formsubmit.co/ashishkumardiwedi783840@gmail.com" method="POST">
+
+
+
+
+      <input type="text" name="Name" value="Enter Your Name Here !" required>
+
+
+
+      <input type="email" name="Email" value="Enter Your Email Here !" required>
+
+
+      <center>
+        
+  <input type="text" name="Country" value="Enter Your Region Name" required>
+          
+      </center>
+
+      <textarea name="Message" id=Message rows="8" cols="40" placeholder="Enter Your Message Here !" required></textarea>
+
+      <button type="submit" class="submit">SEND !</button>
+
+<br>
+<br>
+
+<hr>
+
+
+
+    </form>
+</body>
+
+</html>
